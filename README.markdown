@@ -15,7 +15,6 @@
 - API Endpoints & Swagger
 - Notes
 - Author
-- License
 
 ---
 
