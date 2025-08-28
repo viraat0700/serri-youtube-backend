@@ -1,36 +1,21 @@
 # Welcome to serri-youtube-backend 👋
 
-<p align="center">
-  <a href="https://img.shields.io/badge/version-1.0.0-blue.svg">
-    <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version" />
-  </a>
-  <a href="https://nodejs.org/">
-    <img src="https://img.shields.io/badge/node.js-20-blue?logo=node.js&logoColor=white" alt="Node.js" />
-  </a>
-  <a href="https://www.docker.com/">
-    <img src="https://img.shields.io/badge/docker-yes-blue?logo=docker&logoColor=white" alt="Docker" />
-  </a>
-  <a href="https://github.com/viraat0700/serri-youtube-backend/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/viraat0700/serri-youtube-backend/ci.yml?branch=main&label=Build" alt="Build Status" />
-  </a>
-</p>
-
 > Backend app to fetch and search the latest YouTube videos. It continuously fetches videos for a predefined query using the YouTube API, stores them in MongoDB, and exposes APIs for paginated listing, searching, and Swagger documentation.
 
 ---
 
 ## Table of Contents
 
-- [Description](#description)
-- [Built With](#built-with)
-- [Prerequisites](#prerequisites)
-- [Installation & Setup](#installation--setup)
-  - [Run Locally](#run-locally)
-  - [Run with Docker](#run-with-docker)
-- [API Endpoints & Swagger](#api-endpoints--swagger)
-- [Notes](#notes)
-- [Author](#author)
-- [License](#license)
+- Description
+- Built With
+- Prerequisites
+- Installation & Setup
+  - Run Locally
+  - Run with Docker
+- API Endpoints & Swagger
+- Notes
+- Author
+- License
 
 ---
 
@@ -45,19 +30,15 @@ This backend service is designed to:
 - Automatically rotate multiple YouTube API keys when the quota is exceeded.
 - Expose a **Swagger dashboard** for interactive API documentation.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ---
 
 ## Built With
 
-- [Node.js](https://nodejs.org/)
-- [Express](https://expressjs.com/)
-- [MongoDB](https://www.mongodb.com/)
-- [Docker](https://www.docker.com/)
-- [Swagger UI](https://swagger.io/tools/swagger-ui/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- Node.js
+- Express
+- MongoDB
+- Docker
+- Swagger UI
 
 ---
 
@@ -68,8 +49,6 @@ To run the project locally or via Docker, you need:
 - Node.js (version 20 or higher) and npm installed
 - MongoDB (Atlas cluster or local instance)
 - YouTube Data API v3 key(s)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ---
 
@@ -90,7 +69,7 @@ To run the project locally or via Docker, you need:
    npm install
    ```
 
-3. **Add `.env` file:**
+3. **Add** `.env` **file:**
 
    > Example `.env` content:
 
@@ -110,13 +89,12 @@ To run the project locally or via Docker, you need:
    - Server runs on the port specified in `.env` (default: `8081`).
    - Cron job fetches the latest YouTube videos automatically every 10 seconds.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ---
 
 ### Run with Docker
 
 1. **Ensure Docker and Docker Compose are installed.**
+
 2. **Build and start the Docker container:**
 
    ```bash
@@ -132,8 +110,6 @@ To run the project locally or via Docker, you need:
    docker-compose down
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ---
 
 ## API Endpoints & Swagger
@@ -141,6 +117,7 @@ To run the project locally or via Docker, you need:
 ### 1. Swagger Dashboard
 
 - Swagger UI is available to explore all API endpoints interactively.
+
 - URL (when running locally):
 
   ```
@@ -201,8 +178,6 @@ GET /api/videos/search?q=football
 
 **Response:** Similar to paginated videos but filtered by partial matches in title or description.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ---
 
 ## Notes
@@ -212,22 +187,16 @@ GET /api/videos/search?q=football
 - MongoDB indexes optimize sorting and search performance.
 - The `.env` file is provided to simplify setup.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ---
 
 ## Author
 
 👤 **Viraat Shrivastava**
 
-- GitHub: [@viraat0700](https://github.com/viraat0700)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- GitHub: @viraat0700
 
 ---
 
 ## License
 
-This project is under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project is under the MIT License - see the LICENSE.md file for details.
