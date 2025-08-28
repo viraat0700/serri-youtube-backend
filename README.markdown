@@ -194,9 +194,3 @@ GET /api/videos/search?q=football
 👤 **Viraat Shrivastava**
 
 - GitHub: @viraat0700
-
----
-
-## License
-
-This project is under the MIT License - see the LICENSE.md file for details.
